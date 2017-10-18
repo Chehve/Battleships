@@ -13,7 +13,7 @@
       <File FileName="src\GameResources.cs" Line="19" Column="2" />
       <File FileName="src\EndingGameController.cs" Line="9" Column="1" />
       <File FileName="src\DiscoveryController.cs" Line="9" Column="1" />
-      <File FileName="src\DeploymentController.cs" Line="4" Column="1" />
+      <File FileName="src\DeploymentController.cs" Line="29" Column="2" />
       <File FileName="src\GameController.cs" Line="198" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
