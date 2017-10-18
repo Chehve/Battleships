@@ -6,14 +6,15 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="src\DeploymentController.cs">
     <Files>
-      <File FileName="src\MenuController.cs" Line="9" Column="3" />
-      <File FileName="src\UtilityFunctions.cs" Line="9" Column="1" />
-      <File FileName="src\HighScoreController.cs" Line="9" Column="3" />
-      <File FileName="src\GameLogic.cs" Line="9" Column="1" />
-      <File FileName="src\GameResources.cs" Line="19" Column="2" />
-      <File FileName="src\EndingGameController.cs" Line="9" Column="1" />
-      <File FileName="src\DiscoveryController.cs" Line="9" Column="1" />
-      <File FileName="src\DeploymentController.cs" Line="193" Column="1" />
+      <File FileName="src\GameResources.cs" Line="10" Column="2" />
+      <File FileName="src\UtilityFunctions.cs" Line="205" Column="4" />
+      <File FileName="src\GameController.cs" Line="19" Column="2" />
+      <File FileName="src\DeploymentController.cs" Line="48" Column="3" />
+      <File FileName="src\DiscoveryController.cs" Line="67" Column="3" />
+      <File FileName="src\EndingGameController.cs" Line="23" Column="2" />
+      <File FileName="src\GameLogic.cs" Line="16" Column="2" />
+      <File FileName="src\HighScoreController.cs" Line="25" Column="2" />
+      <File FileName="src\MenuController.cs" Line="9" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />

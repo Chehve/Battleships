@@ -1,4 +1,4 @@
-/*using static GameController;
+using GameController;
 using static UtilityFunctions;
 using static GameResources;
 using static DeploymentController;
@@ -6,7 +6,7 @@ using static DiscoveryController;
 using static EndingGameController;
 using static MenuController;
 using static HighScoreController;
-*/
+
 using Microsoft.VisualBasic;
 using System;
 using System.Collections;
