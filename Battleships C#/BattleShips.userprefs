@@ -14,7 +14,7 @@
       <File FileName="src\EndingGameController.cs" Line="23" Column="2" />
       <File FileName="src\GameLogic.cs" Line="16" Column="2" />
       <File FileName="src\HighScoreController.cs" Line="25" Column="2" />
-      <File FileName="src\MenuController.cs" Line="17" Column="14" />
+      <File FileName="src\MenuController.cs" Line="2" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
