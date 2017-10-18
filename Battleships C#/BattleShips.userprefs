@@ -4,34 +4,16 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\MenuController.cs">
-    <Files>
-      <File FileName="src\GameResources.cs" Line="302" Column="16" />
-      <File FileName="src\UtilityFunctions.cs" Line="8" Column="34" />
-      <File FileName="src\GameController.cs" Line="8" Column="34" />
-      <File FileName="src\DeploymentController.cs" Line="8" Column="34" />
-      <File FileName="src\DiscoveryController.cs" Line="8" Column="34" />
-      <File FileName="src\EndingGameController.cs" Line="8" Column="34" />
-      <File FileName="src\GameLogic.cs" Line="8" Column="34" />
-      <File FileName="src\HighScoreController.cs" Line="8" Column="34" />
-      <File FileName="src\MenuController.cs" Line="8" Column="34" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\GameResources.cs">
-=======
   <MonoDevelop.Ide.Workbench ActiveDocument="src\DeploymentController.cs">
->>>>>>> 4d963995b1c9aa4cdebcbe3fe9884c4bd22319b6
     <Files>
-      <File FileName="src\GameResources.cs" Line="289" Column="3" />
-      <File FileName="src\UtilityFunctions.cs" Line="21" Column="21" />
-      <File FileName="src\GameController.cs" Line="56" Column="4" />
-<<<<<<< HEAD
-      <File FileName="src\DeploymentController.cs" Line="13" Column="34" />
->>>>>>> a182deb24241ce55b61ee5f0ef67a9a788e1490e
-=======
-      <File FileName="src\DeploymentController.cs" Line="51" Column="4" />
->>>>>>> 4d963995b1c9aa4cdebcbe3fe9884c4bd22319b6
+      <File FileName="src\MenuController.cs" Line="9" Column="3" />
+      <File FileName="src\UtilityFunctions.cs" Line="9" Column="1" />
+      <File FileName="src\HighScoreController.cs" Line="9" Column="3" />
+      <File FileName="src\GameLogic.cs" Line="9" Column="1" />
+      <File FileName="src\GameResources.cs" Line="3" Column="14" />
+      <File FileName="src\EndingGameController.cs" Line="9" Column="1" />
+      <File FileName="src\DiscoveryController.cs" Line="9" Column="1" />
+      <File FileName="src\DeploymentController.cs" Line="21" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
