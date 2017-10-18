@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+=======
+using static GameController;
+using static UtilityFunctions;
+using static GameResources;
+using static DiscoveryController;
+using static EndingGameController;
+using static MenuController;
+using static HighScoreController;
+
+using Microsoft.VisualBasic;
+>>>>>>> 9dd52efca39e74ccc59329f8aca6c8ec68f13271
 using System;
 using SwinGameSDK;
 using static GameResources;
