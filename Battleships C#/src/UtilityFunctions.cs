@@ -308,7 +308,7 @@ static class UtilityFunctions
 		int i = 0;
 		for (i = 1; i <= ANIMATION_CELLS * FRAMES_PER_CELL; i++) {
 			UpdateAnimations ();
-			GameResources.DrawScreen ();
+			GameController.DrawScreen ();
 		}
 	}
 }
