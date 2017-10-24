@@ -10,7 +10,20 @@ using SwinGameSDK;
 /// </summary>
 	public static class GameResources
 	{
-
+	public static bool Muted = false;
+	public static void MuteButtonPressed ()
+	{
+		if (!Muted) {
+			foreach (var mut in _Sounds) {
+				Audio.StopSoundEffect (mut.Value);
+			}
+			Audio.StopSoundEffect (_StartSound);
+			Audio.SetMusicVolume (0f);
+		} else { 
+			Audio.SetMusicVolume (1f);
+			Audio.PlaySoundEffect (_StartSound);
+		}
+	}
 		private static void LoadFonts ()
 		{
 			NewFont ("ArialLarge", "arial.ttf", 80);
