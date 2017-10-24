@@ -13,7 +13,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using SwinGameSDK;
-
+using System.Windows.Forms;
 /// <summary>
 /// The EndingGameController is responsible for managing the interactions at the end
 /// of a game.
@@ -31,9 +31,11 @@ static class EndingGameController
 		UtilityFunctions.DrawSmallField(GameController.HumanPlayer.PlayerGrid, GameController.HumanPlayer);
 
 		if (GameController.HumanPlayer.IsDestroyed) {
-			SwinGame.DrawTextLines("YOU LOSE!", Color.White, Color.Transparent, GameResources.GameFont("ArialLarge"), FontAlignment.AlignCenter, 0, 250, SwinGame.ScreenWidth(), SwinGame.ScreenHeight());
+			MessageBox.Show ("You win");
+			GameController.EndCurrentState ();
 		} else {
-			SwinGame.DrawTextLines("-- WINNER --", Color.White, Color.Transparent,  GameResources.GameFont("ArialLarge"), FontAlignment.AlignCenter, 0, 250, SwinGame.ScreenWidth(), SwinGame.ScreenHeight());
+			MessageBox.Show ("You Lose");
+			GameController.EndCurrentState ();
 		}
 	}
 
