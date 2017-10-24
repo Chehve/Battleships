@@ -4,7 +4,7 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\UtilityFunctions.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\HighScoreController.cs">
     <Files>
       <File FileName="src\Model\SeaGridAdapter.cs" Line="19" Column="16" />
       <File FileName="src\GameController.cs" Line="335" Column="42" />
@@ -12,22 +12,9 @@
       <File FileName="src\GameResources.cs" Line="157" Column="25" />
       <File FileName="src\UtilityFunctions.cs" Line="11" Column="2" />
       <File FileName="src\DeploymentController.cs" Line="163" Column="3" />
+      <File FileName="src\EndingGameController.cs" Line="1" Column="1" />
+      <File FileName="src\HighScoreController.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="BattleShips" expanded="True">
-            <Node name="BattleShips" expanded="True">
-              <Node name="Resources" expanded="True" />
-              <Node name="src" expanded="True">
-                <Node name="Model" expanded="True" />
-                <Node name="UtilityFunctions.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.BattleShips PreferredExecutionTarget="MonoDevelop.Default" />

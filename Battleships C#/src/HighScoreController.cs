@@ -120,6 +120,17 @@ static class HighScoreController
 		output.Close();
 	}
 
+
+	public static void Save () {
+
+		StreamWriter File = new StreamWriter ("Test.txt");
+		foreach (Score s in _Scores) {
+			File.Write (_Scores);
+		}
+		File.Close ();
+	
+	}
+
 	/// <summary>
 	/// Draws the high scores to the screen.
 	/// </summary>
@@ -206,7 +217,7 @@ static class HighScoreController
 			_Scores.RemoveAt(_Scores.Count - 1);
 			_Scores.Add(s);
 			_Scores.Sort();
-
+			SaveScores ();
 			GameController.EndCurrentState();
 		}
 	}
