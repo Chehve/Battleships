@@ -4,15 +4,15 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\EndingGameController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\MenuController.cs">
     <Files>
       <File FileName="src\Model\SeaGridAdapter.cs" Line="62" Column="36" />
       <File FileName="src\GameController.cs" Line="20" Column="42" />
-      <File FileName="src\MenuController.cs" Line="326" Column="5" />
-      <File FileName="src\GameResources.cs" Line="145" Column="41" />
-      <File FileName="src\UtilityFunctions.cs" Line="131" Column="3" />
-      <File FileName="src\DeploymentController.cs" Line="154" Column="5" />
-      <File FileName="src\EndingGameController.cs" Line="25" Column="15" />
+      <File FileName="src\MenuController.cs" Line="37" Column="13" />
+      <File FileName="src\GameResources.cs" Line="26" Column="3" />
+      <File FileName="src\UtilityFunctions.cs" Line="17" Column="2" />
+      <File FileName="src\DeploymentController.cs" Line="149" Column="110" />
+      <File FileName="src\EndingGameController.cs" Line="7" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
