@@ -32,10 +32,15 @@ static class EndingGameController
 
 		if (GameController.HumanPlayer.IsDestroyed) {
 			MessageBox.Show ("You win");
+
 			GameController.EndCurrentState ();
+			HighScoreController.ReadHighScore (GameController.HumanPlayer.Score);
+
 		} else {
 			MessageBox.Show ("You Lose");
 			GameController.EndCurrentState ();
+			HighScoreController.ReadHighScore (GameController.HumanPlayer.Score);
+
 		}
 	}
 
