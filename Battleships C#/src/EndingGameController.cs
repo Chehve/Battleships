@@ -31,13 +31,13 @@ static class EndingGameController
 		UtilityFunctions.DrawSmallField(GameController.HumanPlayer.PlayerGrid, GameController.HumanPlayer);
 
 		if (GameController.HumanPlayer.IsDestroyed) {
-			MessageBox.Show ("You win");
+			MessageBox.Show ("You Lose (O_O)","Sorry");
 
 			GameController.EndCurrentState ();
 			HighScoreController.ReadHighScore (GameController.HumanPlayer.Score);
 
 		} else {
-			MessageBox.Show ("You Lose");
+			MessageBox.Show ("You Win!!","Congratulations");
 			GameController.EndCurrentState ();
 			HighScoreController.ReadHighScore (GameController.HumanPlayer.Score);
 
