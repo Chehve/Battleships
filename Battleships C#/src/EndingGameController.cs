@@ -39,10 +39,10 @@ static class EndingGameController
 
 		} else {
 			MessageBox.Show ("You Win!!","Congratulations");
-
-			HighScoreController.ReadHighScore (GameController.HumanPlayer.Score);
-			HighScoreController.Save ();
 			GameController.EndCurrentState ();
+			HighScoreController.ReadHighScore (GameController.HumanPlayer.Score);
+
+
 		}
 	}
 
@@ -54,7 +54,7 @@ static class EndingGameController
 	{
 		if (SwinGame.MouseClicked(MouseButton.LeftButton) || SwinGame.KeyTyped(KeyCode.vk_RETURN) || SwinGame.KeyTyped(KeyCode.vk_ESCAPE)) {
 			HighScoreController.ReadHighScore(GameController.HumanPlayer.Score);
-
+			GameController.EndCurrentState ();
 		}
 	}
 
