@@ -11,6 +11,9 @@ using SwinGameSDK;
 /// managing user input, and displaying the current state of the
 /// game.
 /// </summary>
+/// 
+/// 
+/// 
 public static class GameController
 {
 
@@ -326,7 +329,7 @@ public static class GameController
 				DiscoveryController.DrawDiscovery();
 				break;
 			case GameState.EndingGame:
-				EndingGameController.	DrawEndOfGame();
+				EndingGameController.DrawEndOfGame();
 				break;
 			case GameState.ViewingHighScores:
 				HighScoreController.DrawHighScores();

@@ -31,6 +31,9 @@ using SwinGameSDK;
 			NewImage ("UpDownButton", "deploy_dir_button_vert.png");
 			NewImage ("SelectedShip", "deploy_button_hl.png");
 			NewImage ("PlayButton", "deploy_play_button.png");
+
+            NewImage ("Lose", "deploy_lose_button.png");
+
 			NewImage ("RandomButton", "deploy_randomize_button.png");
 
 			//Ships

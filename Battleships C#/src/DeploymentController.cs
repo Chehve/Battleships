@@ -15,15 +15,15 @@ static class DeploymentController
 	private const int SHIPS_HEIGHT = 90;
 	private const int SHIPS_WIDTH = 300;
 
-	private const int TOP_BUTTONS_TOP = 72;
+	public const int TOP_BUTTONS_TOP = 72;
 
 	private const int TOP_BUTTONS_HEIGHT = 46;
-	private const int PLAY_BUTTON_LEFT = 693;
+	public const int PLAY_BUTTON_LEFT = 693;
 
 	private const int PLAY_BUTTON_WIDTH = 80;
 	private const int UP_DOWN_BUTTON_LEFT = 410;
 
-	private const int LEFT_RIGHT_BUTTON_LEFT = 350;
+	public const int LEFT_RIGHT_BUTTON_LEFT = 350;
 	private const int RANDOM_BUTTON_LEFT = 547;
 
 	private const int RANDOM_BUTTON_WIDTH = 51;

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using SwinGameSDK;
-
+using System.Timers;
 
 /// <summary>
 /// This includes a number of utility methods for
@@ -40,6 +40,10 @@ static class UtilityFunctions
 	public const int ANIMATION_CELLS = 7;
 
 	public const int FRAMES_PER_CELL = 8;
+
+	static SwinGameSDK.Timer timer = new SwinGameSDK.Timer ();
+	static bool startTimer = false;
+
 	/// <summary>
 	/// Determines if the mouse is in a given rectangle.
 	/// </summary>
@@ -48,6 +52,8 @@ static class UtilityFunctions
 	/// <param name="w">the width to check</param>
 	/// <param name="h">the height to check</param>
 	/// <returns>true if the mouse is in the area checked</returns>
+	/// 
+
 	public static bool IsMouseInRectangle (int x, int y, int w, int h)
 	{
 		Point2D mouse = default (Point2D);
@@ -83,6 +89,7 @@ static class UtilityFunctions
 	/// </summary>
 	/// <param name="grid">the grid to show</param>
 	/// <param name="thePlayer">the player to show the ships of</param>
+
 	public static void DrawSmallField (ISeaGrid grid, Player thePlayer)
 	{
 		const int SMALL_FIELD_LEFT = 39;
@@ -118,6 +125,19 @@ static class UtilityFunctions
 
 		int rowTop = 0;
 		int colLeft = 0;
+
+		//surrender
+		SwinGame.DrawBitmap (GameResources.GameImage ("Lose"), DeploymentController.LEFT_RIGHT_BUTTON_LEFT, DeploymentController.TOP_BUTTONS_TOP);
+
+		//time
+		if (!startTimer) {
+			startTimer = true;
+			timer.Start ();
+		}
+		var second = timer.Ticks / 1000;
+		var minute = timer.Ticks / 60000;
+		if (GameController.CurrentState == GameState.Discovering)
+			SwinGame.DrawText ("Ur time is running bruh: " + minute + ":" + second % 60, Color.Red, GameResources.GameFont ("Courier"), rowTop = 540, colLeft + 100);
 
 		//Draw the grid
 		for (int row = 0; row <= 9; row++) {
