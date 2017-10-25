@@ -940,6 +940,9 @@
             managing user input, and displaying the current state of the
             game.
             </summary>
+            
+            
+            
         </member>
         <member name="M:GameController.StartGame">
             <summary>
@@ -1360,6 +1363,7 @@
             <param name="w">the width to check</param>
             <param name="h">the height to check</param>
             <returns>true if the mouse is in the area checked</returns>
+            
         </member>
         <member name="M:UtilityFunctions.DrawField(ISeaGrid,Player,System.Boolean)">
             <summary>

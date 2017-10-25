@@ -4,28 +4,13 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\HighScoreController.cs">
-    <Files>
-      <File FileName="src\Model\SeaGridAdapter.cs" Line="19" Column="16" />
-      <File FileName="src\GameController.cs" Line="335" Column="42" />
-      <File FileName="src\MenuController.cs" Line="50" Column="3" />
-      <File FileName="src\GameResources.cs" Line="157" Column="25" />
-      <File FileName="src\UtilityFunctions.cs" Line="11" Column="2" />
-      <File FileName="src\DeploymentController.cs" Line="163" Column="3" />
-      <File FileName="src\EndingGameController.cs" Line="1" Column="1" />
-      <File FileName="src\HighScoreController.cs" Line="1" Column="1" />
-=======
   <MonoDevelop.Ide.Workbench ActiveDocument="src\MenuController.cs">
     <Files>
-      <File FileName="src\Model\SeaGridAdapter.cs" Line="62" Column="36" />
-      <File FileName="src\GameController.cs" Line="20" Column="42" />
-      <File FileName="src\MenuController.cs" Line="38" Column="16" />
-      <File FileName="src\GameResources.cs" Line="26" Column="3" />
-      <File FileName="src\UtilityFunctions.cs" Line="17" Column="2" />
-      <File FileName="src\DeploymentController.cs" Line="149" Column="110" />
-      <File FileName="src\EndingGameController.cs" Line="7" Column="29" />
->>>>>>> 3d02ab3c7ea9b367e0b47ded8b084c153b6597e0
+      <File FileName="src\GameLogic.cs" Line="1" Column="1" />
+      <File FileName="src\Model\AIHardPlayer.cs" Line="1" Column="1" />
+      <File FileName="src\Model\AIOption.cs" Line="1" Column="1" />
+      <File FileName="src\Model\AIPlayer.cs" Line="1" Column="1" />
+      <File FileName="src\MenuController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
