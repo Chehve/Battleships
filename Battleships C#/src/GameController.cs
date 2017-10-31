@@ -96,6 +96,7 @@ public static class GameController
 		_theGame.AttackCompleted += AttackCompleted;
 
 		AddNewState(GameState.Deploying);
+
 	}
 
 	/// <summary>
@@ -275,6 +276,7 @@ public static class GameController
 		//Read incoming input events
 		SwinGame.ProcessEvents();
 
+
 		switch (CurrentState) {
 			case GameState.ViewingMainMenu:
 				MenuController.HandleMainMenuInput();
@@ -286,6 +288,7 @@ public static class GameController
 				MenuController.HandleSetupMenuInput();
 				break;
 			case GameState.Deploying:
+				MenuController.HandleBackButton ();
 				DeploymentController.HandleDeploymentInput();
 				break;
 			case GameState.Discovering:
@@ -312,6 +315,7 @@ public static class GameController
 	{
 		UtilityFunctions.DrawBackground();
 
+
 		switch (CurrentState) {
 			case GameState.ViewingMainMenu:
 				MenuController.DrawMainMenu();
@@ -323,6 +327,7 @@ public static class GameController
 				MenuController.DrawSettings();
 				break;
 			case GameState.Deploying:
+				//MenuController.DrawBackButton ();
 				DeploymentController.DrawDeployment();
 				break;
 			case GameState.Discovering:
@@ -335,6 +340,8 @@ public static class GameController
 				HighScoreController.DrawHighScores();
 				break;
 		}
+
+
 
 		UtilityFunctions.DrawAnimations();
 

@@ -49,8 +49,10 @@ static class MenuController
 			"EASY",
 			"MEDIUM",
 			"HARD"
+		},
+		new string[]{
+			"BACK",
 		}
-
 	};
 	private const int MENU_TOP = 575;
 	private const int MENU_LEFT = 30;
@@ -80,6 +82,8 @@ static class MenuController
 	private const int SETUP_MENU_EXIT_BUTTON = 5;
 	private const int GAME_MENU_RETURN_BUTTON = 0;
 	private const int GAME_MENU_SURRENDER_BUTTON = 1;
+
+	private const int BACK_BUTTON = 3;
 
 	private const int GAME_MENU_QUIT_BUTTON = 2;
 	private static readonly Color MENU_COLOR = SwinGame.RGBAColor(2, 167, 252, 255);
@@ -117,6 +121,11 @@ static class MenuController
 		HandleMenuInput(GAME_MENU, 0, 0);
 	}
 
+	public static void HandleBackButton ()
+	{
+		HandleMenuInput (BACK_BUTTON, 0, 0);
+	}
+
 	/// <summary>
 	/// Handles input for the specified menu.
 	/// </summary>
@@ -145,6 +154,15 @@ static class MenuController
 				//none clicked - so end this sub menu
 			GameController.EndCurrentState();
 			}
+
+	
+		}
+
+		if (SwinGame.MouseClicked (MouseButton.LeftButton)) {
+			if (IsMouseOverMenu (BACK_BUTTON, 0, 0)) {
+				//none clicked - so end this sub menu
+				GameController.EndCurrentState ();
+			}
 		}
 
 		return false;
@@ -168,8 +186,14 @@ static class MenuController
 	{
 		//Clears the Screen to Black
 		//SwinGame.DrawText("Paused", Color.White, GameFont("ArialLarge"), 50, 50)
-
 		DrawButtons(GAME_MENU);
+	}
+
+	public static void DrawBackButton ()
+	{
+		//Clears the Screen to Black
+		//SwinGame.DrawText("Paused", Color.White, GameFont("ArialLarge"), 50, 50)
+		DrawButtons (BACK_BUTTON);
 	}
 
 	/// <summary>
@@ -338,6 +362,15 @@ static class MenuController
 			case GAME_MENU_QUIT_BUTTON:
 				GameController.AddNewState(GameState.Quitting);
 				break;
+		}
+	}
+
+	public static void BackButton (int button)
+	{
+		switch (button) {
+		case BACK_BUTTON:
+			GameController.EndCurrentState ();
+			break;
 		}
 	}
 }
