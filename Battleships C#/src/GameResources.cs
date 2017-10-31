@@ -5,25 +5,33 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using SwinGameSDK;
+using System.Windows.Forms;
+
 /// <summary>
 /// Game resources.
 /// </summary>
 	public static class GameResources
 	{
-	public static bool Muted = false;
-	public static void MuteButtonPressed ()
-	{
-		if (!Muted) {
-			foreach (var mut in _Sounds) {
-				Audio.StopSoundEffect (mut.Value);
+		public static bool Muted = false;
+		public static void MuteButtonPressed ()
+		{
+			if (!Muted) {
+				foreach (var mut in _Sounds) {
+					Audio.StopSoundEffect (mut.Value);
+				}
+				Audio.StopSoundEffect (_StartSound);
+				Audio.SetMusicVolume (0f);
+			} else { 
+				Audio.SetMusicVolume (1f);
+				Audio.PlaySoundEffect (_StartSound);
 			}
-			Audio.StopSoundEffect (_StartSound);
-			Audio.SetMusicVolume (0f);
-		} else { 
-			Audio.SetMusicVolume (1f);
-			Audio.PlaySoundEffect (_StartSound);
 		}
-	}
+
+		public static void FullScreen () 
+		{
+			SwinGame.ToggleFullScreen ();
+		}
+
 		private static void LoadFonts ()
 		{
 			NewFont ("ArialLarge", "arial.ttf", 80);
