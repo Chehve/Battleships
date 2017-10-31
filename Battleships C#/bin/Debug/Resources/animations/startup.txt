@@ -63,5 +63,5 @@ s:0,SwinGameStart,SwinGameStart.wav
 //Animation identifiers.
 //
 //i:NAME,ID-START
-i:splash,0
-i:splash-debug,0
+i:explosion,0
+i:explosion-debug,0
