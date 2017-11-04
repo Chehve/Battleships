@@ -137,7 +137,7 @@ static class UtilityFunctions
 		var second = timer.Ticks / 1000;
 		var minute = timer.Ticks / 60000;
 		if (GameController.CurrentState == GameState.Discovering)
-			SwinGame.DrawText ("Game timer: " + minute + ":" + second % 60, Color.Red, GameResources.GameFont ("Courier"), rowTop = 540, colLeft + 100);
+			SwinGame.DrawText ("Game timer: " + minute + ":" + second % 60, Color.Red, GameResources.GameFont ("Courier"), rowTop = 647, colLeft + 100);
 
 		//Draw the grid
 		for (int row = 0; row <= 9; row++) {
